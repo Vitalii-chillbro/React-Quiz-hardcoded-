@@ -15,7 +15,8 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run react-start\"",
     "react-start": "react-scripts start",
-    "build": "npm run react-scripts build && npm run server",
+    "build": "npm run react-build && npm run server",
+    "react-build": "react-scripts build", 
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server --watch data/questions.json --port 8000"

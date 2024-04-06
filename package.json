@@ -13,10 +13,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"npm run react-start\" \"npm run server\"",
+    "start": "concurrently \"npm run server\" \"npm run react-start\"",
     "react-start": "react-scripts start",
-    "build": "npm run react-build && npm run start",
-    "react-build": "react-scripts build", 
+    "build": "npm run react-build && npm run server",
+    "react-build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "server": "json-server --watch data/questions.json --port 8000"

@@ -15,7 +15,7 @@
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run react-start\"",
     "react-start": "react-scripts start",
-    "build": "npm run react-build",
+    "build": "react-scripts build && npm run server",
     "react-build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
